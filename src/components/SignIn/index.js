@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 import * as ROUTES from '../../constants/routes';
 import { withFirebase } from '../Firebase';
+import { PasswordForgetLink } from '../PasswordForget';
 import { SignUpLink } from '../SignUp';
 
 
@@ -10,6 +11,7 @@ const SignInPage = () => (
   <div>
     <h1>SignIn</h1>
     <SignInForm />
+    <PasswordForgetLink />
     <SignUpLink />
   </div>
 );
@@ -86,3 +88,4 @@ const SignInForm = compose(
 export default SignInPage;
 
 export { SignInForm };
+
